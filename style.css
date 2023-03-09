@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body p {
+    font-size: 14px;
+    color: hsl(219, 14%, 63%);
+}
+h1 {
+    font-size: 20px;
+    font-weight: 800;
+}
+#marking {
+    cursor: pointer;
+}
+.names {
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(224, 21%, 14%);
+}
+.time {
+    color:hsl(219, 14%, 63%) ;
+}
+/* main {
+    padding: 2em;
+} */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+.top-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.digit {
+    margin-left: 1em;
+    background-color: blue;
+    color: hsl(0, 0%, 100%);
+    padding: 0px 10px;
+    border-radius: 5px;
+    margin-top: -5px;
+    
+}
+.write-up {
+    text-align: left;
+    margin-left: 10px;
+    /* margin-top: -15px; */
+}
+img {
+    float:left;
+    width: 15%;
+    display: inline-block;
+    height: fit-content;
+    cursor: pointer;
+}
+.comment {
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    border-radius: 10px;
+}
+.comment-read {
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    border-radius: 10px;
+}
+.private-msg{
+    border: 1px solid;
+    padding: 10px 20px 10px 10px;
+}
+.private-msg:hover {
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+.write-up img {
+    float: right;
+}
+.unread {
+    background-color:hsl(211, 68%, 94%);
+}
+a {
+    text-decoration: none;
+    color:hsl(224, 21%, 14%);
+}
+a:hover {
+    color: hsl(218, 68%, 61%);
+}
+.inner-link {
+    color: hsl(227, 4%, 42%);
+}
+.red-dot {
+    display: inline-block;
+    background-color: rgb(245, 112, 112);
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+
+/* MOBILE DESIGN */
+@media (max-width:375px){
+    main {
+        padding: 2em;
+    }
+}
+
+/* TABLET DESIGN */
+@media (min-width:426px) and (max-width:768px) {
+    img {
+        width: 10%;
+    }
+    .tablet {
+        padding: 15px 30px;
+        width: 90%;
+        margin: 20px auto;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px 2px hsla(219, 14%, 63% 0.3);
+    }
+    body {
+        background-color: hsl(210, 60%, 98%);
+    }
+    
+}
+
+/* LAPTOP DESIGN */
+@media (min-width:769px){
+    .tablet {
+        width: 50%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px 2px hsla(219, 14%, 63% 0.3);
+    }
+    img {
+        width: 10%;
+    }
+    body {
+        background-color: hsl(210, 60%, 98%);
+    }
+    .private-msg{
+        border: 1px solid;
+        padding: 10px 30px 10px 10px;
+    }
+}
